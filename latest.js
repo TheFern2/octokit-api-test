@@ -3,6 +3,7 @@
 const Octokit = require("@octokit/rest");
 
 const octokit = new Octokit({
+    userAgent: 'testApp v1.2.3',
     baseUrl: 'https://github.ncsu.edu', // append /api/v3 if necessary
     auth: 'paste-token-here',
 })

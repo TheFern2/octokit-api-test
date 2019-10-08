@@ -5,7 +5,10 @@ const Octokit = require("@octokit/rest");
 const octokit = new Octokit({
     debug: true,
     host: 'https://github.ncsu.edu',
-    pathPrefix: '/api/v3'
+    pathPrefix: '/api/v3',
+    headers: {
+        'user-agent': 'octokit/rest.js v1.2.3',
+    },
 });
 
 octokit.authenticate({
