@@ -1,3 +1,5 @@
+// Script for octokit/rest 14.08.0
+
 const Octokit = require("@octokit/rest");
 
 const octokit = new Octokit({
