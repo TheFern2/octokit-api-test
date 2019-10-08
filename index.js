@@ -1,6 +1,5 @@
 const Octokit = require("@octokit/rest");
 
-
 const octokit = new Octokit({
     debug: true,
     host: 'https://github.ncsu.edu',
