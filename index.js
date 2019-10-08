@@ -2,7 +2,9 @@ const Octokit = require("@octokit/rest");
 
 
 const octokit = new Octokit({
-    baseUrl: "https://github.ncsu.edu/api/v3",
+    debug: true,
+    host: 'https://github.ncsu.edu',
+    pathPrefix: '/api/v3'
 });
 
 octokit.authenticate({
