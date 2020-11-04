@@ -1,12 +1,13 @@
 // Script for octokit/rest 18.0.3 latest
 const { Octokit } = require("@octokit/rest");
 const fs = require("fs");
+const secret = require("./secret")
 
-const API_KEY = ""
+const API_KEY = secret.API_KEY
 
 const octokit = new Octokit({
   requestMedia: "application/vnd.github.v3+json",
-  auth: "",
+  auth: API_KEY,
   headers: {
     userAgent: "testApp v1.2.3",
     "user-agent": "octokit/rest.js v1.2.3",
