@@ -1,6 +1,7 @@
 // Script for octokit/rest 18.0.3 latest
 const { Octokit } = require("@octokit/rest");
 const fs = require("fs");
+const secret = require("./secret")
 
 const API_KEY = secret.API_KEY
 
